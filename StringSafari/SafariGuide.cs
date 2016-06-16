@@ -55,8 +55,9 @@ namespace StringSafari
         {
             // "lion zebra zebra"
             //  0123456789012345
-            int firstZebra = str.ToLower().IndexOf("zebra");
-            int lastZebra = str.ToLower().LastIndexOf("zebra");
+            string newString = str.ToLower();
+            int firstZebra = newString.IndexOf("zebra");
+            int lastZebra = newString.LastIndexOf("zebra");
 
             if (firstZebra == lastZebra)
             {
