@@ -42,7 +42,7 @@ namespace StringSafari.Test
             return SafariGuide.HasZebra(str);
         }
 
-        /*
+        
         [TestCase("zebra", ExpectedResult = false)]
         [TestCase("ZEBRA", ExpectedResult = false)]
         [TestCase("Lion", ExpectedResult = false)]
@@ -54,6 +54,7 @@ namespace StringSafari.Test
             return SafariGuide.HasADazzle(str);
         }
 
+        /*
         [TestCase("zebra", ExpectedResult = false)]
         [TestCase("Lion", ExpectedResult = false)]
         [TestCase("LION ZEBRA zebra lion", ExpectedResult = true)]

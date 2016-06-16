@@ -53,8 +53,21 @@ namespace StringSafari
         /// <returns>true if the string has at least two zebras in it, false otherwise</returns>
         public static bool HasADazzle(string str)
         {
-            // TODO
-            return false;
+            // "lion zebra zebra"
+            //  0123456789012345
+            int firstZebra = str.ToLower().IndexOf("zebra");
+            int lastZebra = str.ToLower().LastIndexOf("zebra");
+
+            if (firstZebra == lastZebra)
+            {
+                // only one zebra!
+                return false;
+            }
+            else
+            {
+                // at least two zebras
+                return true;
+            }
         }
 
         /// <summary>
