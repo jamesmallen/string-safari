@@ -39,8 +39,10 @@ namespace StringSafari
         /// <returns>true if the string has a zebra in it, false otherwise</returns>
         public static bool HasZebra(string str)
         {
-            string newString = str.ToLower();
-            return HasBabyZebra(newString);
+            //string newString = str.ToLower();
+            //return HasBabyZebra(newString);
+            //return str.ToLower().Contains("zebra");
+            return HasBabyZebra(str.ToLower());
         }
 
         /// <summary>
