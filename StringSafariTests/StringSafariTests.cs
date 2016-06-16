@@ -31,7 +31,7 @@ namespace StringSafari.Test
             return SafariGuide.HasAdultZebra(str);
         }
 
-        /*
+        
         [TestCase("zebra", ExpectedResult = true)]
         [TestCase("ZEBRA", ExpectedResult = true)]
         [TestCase("Lion", ExpectedResult = false)]
@@ -42,6 +42,7 @@ namespace StringSafari.Test
             return SafariGuide.HasZebra(str);
         }
 
+        /*
         [TestCase("zebra", ExpectedResult = false)]
         [TestCase("ZEBRA", ExpectedResult = false)]
         [TestCase("Lion", ExpectedResult = false)]
