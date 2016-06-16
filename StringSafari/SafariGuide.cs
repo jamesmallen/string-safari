@@ -124,8 +124,15 @@ namespace StringSafari
         /// <returns>true if there is no lion at the start of the string</returns>
         public static bool SafeDistanceToLion(string str)
         {
-            // TODO
-            return false;
+            string newString = str.ToLower();
+            if (newString.StartsWith("lion"))
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
     }
 }
