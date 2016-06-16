@@ -134,5 +134,23 @@ namespace StringSafari
                 return true;
             }
         }
+
+        /// <summary>
+        /// Returns true if the string is long (more than 10 characters)
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
+        public static bool IsCrowded(string str)
+        {
+            if (str.Length > 10)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
     }
 }

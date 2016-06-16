@@ -91,6 +91,15 @@ namespace StringSafari.Test
         {
             return SafariGuide.SafeDistanceToLion(str);
         }
-        
+
+
+        [TestCase("zebra", ExpectedResult = false)]
+        [TestCase("Lion", ExpectedResult = false)]
+        [TestCase("LION ZEBRA zebra lion", ExpectedResult = true)]
+        [TestCase("LION zebra LION", ExpectedResult = true)]
+        public bool IsCrowdedTest(string str)
+        {
+            return SafariGuide.IsCrowded(str);
+        }
     }
 }
