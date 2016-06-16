@@ -104,8 +104,25 @@ namespace StringSafari
         /// <returns>true if the string has at least two lions in it and just one zebra, false otherwise</returns>
         public static bool ThereWillBeBlood(string str)
         {
-            // TODO
-            return false;
+            if (HasAPride(str))
+            {
+                if (HasADazzle(str))
+                {
+                    return false;
+                }
+                else if (HasZebra(str))
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+            else
+            {
+                return false;
+            }
         }
 
         /// <summary>

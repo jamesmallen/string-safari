@@ -66,18 +66,21 @@ namespace StringSafari.Test
             return SafariGuide.HasAPride(str);
         }
 
-        /*
+        
         [TestCase("zebra", ExpectedResult = false)]
         [TestCase("Lion", ExpectedResult = false)]
         [TestCase("LION ZEBRA zebra lion", ExpectedResult = false)]
         [TestCase("zebra LION ZEBRA lion", ExpectedResult = false)]
         [TestCase("LION zebra LION", ExpectedResult = true)]
         [TestCase("LION zebra lion", ExpectedResult = true)]
+        [TestCase("LION zebra lion LION", ExpectedResult = true)]
+        [TestCase("LION Lion", ExpectedResult = false)]
         public bool BloodSearch(string str)
         {
             return SafariGuide.ThereWillBeBlood(str);
         }
 
+        /*
         [TestCase("zebra", ExpectedResult = true)]
         [TestCase("Lion", ExpectedResult = false)]
         [TestCase("LION ZEBRA zebra lion", ExpectedResult = false)]
