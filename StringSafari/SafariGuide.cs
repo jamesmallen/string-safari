@@ -27,8 +27,7 @@ namespace StringSafari
         /// <returns>true if the string has "ZEBRA" in it, false otherwise</returns>
         public static bool HasAdultZebra(string str)
         {
-            // TODO
-            return false;
+            return str.Contains("ZEBRA");
         }
 
         /// <summary>
